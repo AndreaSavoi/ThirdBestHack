@@ -5,8 +5,8 @@ import java.io.IOException;
 
 public class TestCompare {
         public static void main(String[] args) {
-            String csvFile = "C:\\Users\\andre\\Downloads\\EsportazioneGreciaAnomalie.csv";
-            String columnToCompare = "mmsi"; // Specifica il nome della colonna da confrontare
+            String csvFile = "/Users/mauriziore/Desktop/EsportazioneGreciaAnomalie.csv";
+            String columnToCompare = "dt_pos_utc"; // Specifica il nome della colonna da confrontare
 
             try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
                 String line;
