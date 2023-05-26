@@ -2,18 +2,22 @@ package com.example.thirdbesthack;
 
 import com.opencsv.CSVReader;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class CSVToArrayExample {
-    public static void main(String[] args) {
-        String csvFile = "/Users/mauriziore/Desktop/EsportazioneGreciaAnomalie.csv";
+public class DummyCsv {
+    //in questa classe ci sarà il csv che verrà preso una sola volta per motivi di efficenza
+    public static String[][] data;
+    private static String[] line;
+    private static int rowCount;
+    private static int columnCount;
+    private static CSVReader reader = null;
 
-        try (CSVReader reader = new CSVReader(new FileReader(csvFile))) {
-            String[] line;
-            int rowCount = 0;
-            int columnCount = 0;
-
+    public static void setCsv(String filePath) {
+        //riceve il file path , ora lo deve caricare dentro la matrice che sraà static a cui tutte
+        //le classi possono attingere
+        try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
             // Ottieni il numero di righe e colonne nel file CSV
             while ((line = reader.readNext()) != null) {
                 rowCount++;
@@ -24,10 +28,10 @@ public class CSVToArrayExample {
 
             // Torna all'inizio del file
             reader.close();
-            CSVReader newReader = new CSVReader(new FileReader(csvFile));
+            CSVReader newReader = new CSVReader(new FileReader(filePath));
 
             // Crea l'array bidimensionale
-            String[][] data = new String[rowCount][columnCount];
+            data = new String[rowCount][columnCount];
 
             // Popola l'array con i dati del CSV
             int rowIndex = 0;
@@ -37,16 +41,10 @@ public class CSVToArrayExample {
                 }
                 rowIndex++;
             }
-
-            // Stampa l'array
-            for (String[] row : data) {
-                for (String cell : row) {
-                    System.out.print(cell + "\t");
-                }
-                System.out.println();
-            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 }

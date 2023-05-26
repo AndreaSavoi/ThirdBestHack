@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abafd440-bb02-41b0-8aa8-3687d624af1e" name="Changes" comment="SecondCommmit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCompare.java" afterDir="false" />
+    <list default="true" id="abafd440-bb02-41b0-8aa8-3687d624af1e" name="Changes" comment="commit mio">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaNoFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eccezioni/BucaTemporaleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/IMAGE 2023-05-26 10:59:36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/IMAGE 2023-05-26 10:59:49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/CSVToArrayExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCompareNotEqual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -37,9 +51,38 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/mauriziore/Desktop/demo/ThirdBestHack/src/main/resources/com/example/thirdbesthack"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.thirdbesthack.HelloApplication" />
+      <module name="ThirdBestHack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.thirdbesthack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685016980406</updated>
       <workItem from="1685016981672" duration="2270000" />
+      <workItem from="1685084186680" duration="8856000" />
     </task>
     <task id="LOCAL-00001" summary="FirstCommit">
       <created>1685017046436</created>
