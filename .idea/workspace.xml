@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abafd440-bb02-41b0-8aa8-3687d624af1e" name="Changes" comment="commit mio">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/NoFlag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/StessoPercorso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/ZigZag.java" afterDir="false" />
+    <list default="true" id="abafd440-bb02-41b0-8aa8-3687d624af1e" name="Changes" comment="new anomalies">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/ChatApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/ZigZag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/ZigZag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685016980406</updated>
       <workItem from="1685016981672" duration="2270000" />
-      <workItem from="1685084186680" duration="10386000" />
+      <workItem from="1685084186680" duration="14351000" />
     </task>
     <task id="LOCAL-00001" summary="FirstCommit">
       <created>1685017046436</created>
@@ -117,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685093186585</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new anomalies">
+      <created>1685105068132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685105068132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +142,7 @@
     <MESSAGE value="FirstCommit" />
     <MESSAGE value="SecondCommmit" />
     <MESSAGE value="commit mio" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit mio" />
+    <MESSAGE value="new anomalies" />
+    <option name="LAST_COMMIT_MESSAGE" value="new anomalies" />
   </component>
 </project>

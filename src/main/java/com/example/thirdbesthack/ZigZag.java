@@ -64,27 +64,25 @@ public class ZigZag {
             for (int j = 0; j < longitudeArray.length; j++) {
                 longitudeDoubleArray[j] = Double.parseDouble(longitudeArray[j]);
             }
-            // Calcola la differenza di latitudine e longitudine tra i punti consecutivi
-            double[] latDiff = new double[latitudeDoubleArray.length - 1];
-            double[] lonDiff = new double[longitudeDoubleArray.length - 1];
-            for (int k = 0; k < latitudeDoubleArray.length - 1; k++) {
-                latDiff[k] = latitudeDoubleArray[k + 1] - latitudeDoubleArray[k];
-                lonDiff[k] = longitudeDoubleArray[k + 1] - longitudeDoubleArray[k];
-            }
 
-            // Conta il numero di cambi di direzione
-            int directionChanges = 0;
-            int zigzagCount = 0;
-            for (int n = 0; n < latDiff.length - 1; n++) {
-                if ((latDiff[n] > 0 && latDiff[n + 1] < 0) || (latDiff[n] < 0 && latDiff[n + 1] > 0)
-                        || (lonDiff[n] > 0 && lonDiff[n + 1] < 0) || (lonDiff[n] < 0 && lonDiff[n + 1] > 0)) {
-                    directionChanges++;
-
-                    if (directionChanges >= 4) {
-                        naviZigZag.add(DummyCsv.data[i][0]);
-                        break;
+            int count = 0;
+            int k = 2;
+            while(count < limit && k < longitudeDoubleArray.length) {
+                if(longitudeDoubleArray[k-1] - longitudeDoubleArray[k-2] > 0) {
+                    if(longitudeDoubleArray[k] - longitudeDoubleArray[k-1] < 0) {
+                        //si forma una V al contrario
+                        count++;
+                    }
+                } else if(longitudeDoubleArray[k-1] - longitudeDoubleArray[k-2] < 0) {
+                    if(longitudeDoubleArray[k] - longitudeDoubleArray[k-1] > 0) {
+                        //si forma una V
+                        count++;
                     }
                 }
+                k++;
+            }
+            if(count >= limit) {
+                naviZigZag.add(DummyCsv.data[i][0]);
             }
         }
     }

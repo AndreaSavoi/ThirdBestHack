@@ -9,6 +9,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -60,8 +62,9 @@ public class HelloController {
             String sPT = String.join(",", stessoPercorso);
             createResponsePane("Le navi con buche temporali sono: "+bucheTot +  "\n");
             createResponsePane("Le navi senza flag sono: "+nFT+ "\n");
-            createResponsePane("Le navi con un percorso a zig zag sono: "+zzT+ "\n");
             createResponsePane("Le navi con lo stesso percorso sono: "+sPT + "\n");
+            createResponsePane("Le navi con un percorso a zig zag sono: "+zzT+ "\n");
+
         } else {
             createResponsePane(input); // Pannello per la risposta dell'utente
             createResponsePane("Mi dispiace, non ho capito!");
@@ -71,12 +74,14 @@ public class HelloController {
     private void createResponsePane(String text) {
         Pane pane = new Pane();
         pane.setPrefSize(1239, 120);
-        Label label = new Label();
-        label.setLayoutY(pane.getPrefHeight() / 2 - 15);
-        label.setFont(new Font("Century Gothic", 20));
-        label.setStyle("-fx-font-weight: bold italic");
-        label.setText(text);
-        pane.getChildren().add(label);
+        Text textNode = new Text(text);
+        textNode.setFont(Font.font("Century Gothic", 20));
+        textNode.setStyle("-fx-font-weight: bold italic");
+        textNode.setWrappingWidth(pane.getPrefWidth());
+        textNode.setTextAlignment(TextAlignment.CENTER);
+        textNode.layoutXProperty().bind(pane.widthProperty().subtract(textNode.prefWidth(-1)).divide(2));
+        textNode.layoutYProperty().bind(pane.heightProperty().subtract(textNode.prefHeight(-1)).divide(2));
+        pane.getChildren().add(textNode);
         mess.getChildren().add(pane);
     }
 
