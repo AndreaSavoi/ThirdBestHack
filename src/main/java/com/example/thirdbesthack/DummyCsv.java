@@ -10,8 +10,8 @@ public class DummyCsv {
     //in questa classe ci sarà il csv che verrà preso una sola volta per motivi di efficenza
     public static String[][] data;
     private static String[] line;
-    private static int rowCount;
-    private static int columnCount;
+    public static int rowCount;
+    public static int columnCount;
     private static CSVReader reader = null;
 
     public static void setCsv(String filePath) {

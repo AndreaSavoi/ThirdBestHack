@@ -17,9 +17,6 @@ public class RilevaBucheTemporali {
     private final int other=16;
     private final int passenger=20;
     private  List <String> naviConBucaTemporale = new ArrayList<String>();
-    private  int rowCount = 0;
-    private  int columnCount = 0;
-    private String[] line;
     private SimpleDateFormat dateFormat;
     private long diffInMinutes;
     int numberOfDate;
@@ -38,7 +35,7 @@ public class RilevaBucheTemporali {
     private Date date1;
     private Date date2;
 
-    public void rilevaBuche(String path) throws BucaTemporaleException {
+    public void rilevaBuche() throws BucaTemporaleException {
         //variabili che contengono i tempi
         //csvFile=path;
         //csvFile = "/Users/mauriziore/Desktop/EsportazioneGreciaAnomalie.csv";
@@ -70,7 +67,7 @@ public class RilevaBucheTemporali {
             //creo un array che conterrà le navi che hanno avuto un buco temporale
             //ora devo scansionare ogni riga con la colonna che contiene le date, devo sapere quante righe ho in tutto
             //e questa informazione ce l'ho nella variabile row count
-            for(int i=1; i<rowCount;i++) {
+            for(int i=1; i<DummyCsv.rowCount;i++) {
                 //vedo il tipo di nave che ho ora
                 tipoDiNave=DummyCsv.data[i][3];
                 // ora controlliamo la data, dobbiamo verificare che non sia superiore a tot minuti
@@ -151,6 +148,7 @@ public class RilevaBucheTemporali {
         //}
     }
     public List<String> getListNaviBucheTemporali(){
+
         return naviConBucaTemporale;
     }
 }

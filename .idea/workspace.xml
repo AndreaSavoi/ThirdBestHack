@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abafd440-bb02-41b0-8aa8-3687d624af1e" name="Changes" comment="commit mio">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaNoFlag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eccezioni/BucaTemporaleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/IMAGE 2023-05-26 10:59:36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/IMAGE 2023-05-26 10:59:49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/NoFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/StessoPercorso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/ZigZag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/CSVToArrayExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/DummyCsv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCSV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCompare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/TestCompareNotEqual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack/RilevaBucheTemporali.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +55,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/thirdbesthack" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/thirdbesthack" />
     </key>
   </component>
   <component name="RunManager">
@@ -92,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685016980406</updated>
       <workItem from="1685016981672" duration="2270000" />
-      <workItem from="1685084186680" duration="8856000" />
+      <workItem from="1685084186680" duration="10386000" />
     </task>
     <task id="LOCAL-00001" summary="FirstCommit">
       <created>1685017046436</created>
@@ -115,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685018973432</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit mio">
+      <created>1685093186585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685093186585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstCommit" />
     <MESSAGE value="SecondCommmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="SecondCommmit" />
+    <MESSAGE value="commit mio" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit mio" />
   </component>
 </project>
